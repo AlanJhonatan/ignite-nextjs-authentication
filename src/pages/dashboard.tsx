@@ -5,8 +5,6 @@ export default function Dashboard () {
   const { user } = useContext(AuthContext);
   
   return (
-    <h1>
-      {JSON.stringify(user)}
-    </h1>
+    <h3>Email: {user.email}</h3>
   )
 }
